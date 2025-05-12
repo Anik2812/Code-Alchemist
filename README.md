@@ -1,8 +1,4 @@
-Here’s the **enhanced and complete `README.md`** with **Demo**, **Setup Instructions**, and all the relevant sections updated for a production-ready CLI project:
 
----
-
-````markdown
 # 🧪 Code Alchemist CLI
 
 **Code Alchemist CLI** is your AI-powered assistant for transforming messy codebases into clean, well-documented, and beautifully organized projects — all from the command line. It helps you refactor Python files, generate docstrings, and organize your files effortlessly using smart automation.
@@ -16,7 +12,6 @@ Here’s the **enhanced and complete `README.md`** with **Demo**, **Setup Instru
 - 🧾 **Automatic Docstring Generation** – Generates Pythonic and PEP-257-compliant docstrings.
 - 🗂️ **Intelligent File Management** – Move, rename, or backup files easily with CLI options.
 - 🧪 **Demo Mode** – Try it out in a safe, non-destructive way to preview changes.
-- 🛠️ **Offline & Portable** – No external dependencies outside of Python and a few standard libraries.
 
 ---
 
@@ -35,23 +30,32 @@ Manually improving code can be a tedious, error-prone process — especially whe
 Here’s how easy it is to use Code Alchemist CLI:
 
 ```bash
-# Refactor a single file
-python code_alchemist.py --file sample_script.py
+#analyze a file
+./code_alchemist.py analyze filename/path
 
-# Generate docstrings for all Python files in a directory
-python code_alchemist.py --dir my_project --doc
+# Refactor a file
+./code_alchemist.py refactor filename/path
 
-# Refactor + generate docstrings in one go
-python code_alchemist.py --file utils/helper.py --refactor --doc
+# Generate documentation for the file
+./code_alchemist.py document filename/path
 
-# Move files after processing
-python code_alchemist.py --file utils/helper.py --move refactored_code/
+# Suggest performance and security improvements
+./code_alchemist.py optimize filename/path
+
+# Generate project dashboard
+./code_alchemist.py dashboard filename/path
+
+# Setup project structure and config files
+./code_alchemist.py setup filename/path
+
+#  Run all transformations at once
+./code_alchemist.py transmute filename/path
 ````
 
-🧪 Try the `--demo` flag to preview changes without writing them:
+🧪 Try the `demo` flag to preview changes without writing them:
 
 ```bash
-python code_alchemist.py --file sample_script.py --refactor --demo
+./demo.sh
 ```
 
 ---
@@ -78,17 +82,16 @@ git clone https://github.com/Anik2812/code-alchemist-cli.git
 cd code-alchemist-cli
 ```
 
-Create a virtual environment (recommended):
-
-```bash
-python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
+Open linux terminal or wsl
+```for wsl
+ cd "/mnt/(drive name)/path to the file"
 ```
 
 Install dependencies:
 
 ```bash
-pip install -r requirements.txt
+chmod +x ./setup.sh
+./setup.sh
 ```
 
 ---
@@ -97,12 +100,15 @@ pip install -r requirements.txt
 
 To verify it works:
 
-```bash
-python code_alchemist.py --help
+```For demo you can run
+chmod +x ./demo.sh
+./demo.sh
 ```
 
 You should see a list of supported commands and flags.
-
+```bash
+  ./code_alchemist.py
+```
 ---
 
 ## 🗂️ Folder Structure
@@ -111,14 +117,8 @@ You should see a list of supported commands and flags.
 code-alchemist-cli/
 │
 ├── code_alchemist.py        # Main CLI file
-├── utils/
-│   ├── refactor.py          # Refactoring logic
-│   ├── docstrings.py        # Docstring generation
-│   └── file_manager.py      # File move/copy tools
-├── tests/
-│   └── test_cases.py        # Optional test suite
-├── requirements.txt         # Dependencies
-└── README.md                # You're here
+├── setup.sh
+├── demo.sh
 ```
 
 ---
