@@ -1,140 +1,120 @@
+# 🧙‍♂️ Code Alchemist CLI: Transforming Code with Magic ✨
 
-# 🧪 Code Alchemist CLI
+![Code Alchemist CLI Cover](https://github.com/user-attachments/assets/9983521b-91e1-4fb8-95d2-f2a33cf288ff)
 
-**Code Alchemist CLI** is your AI-powered assistant for transforming messy codebases into clean, well-documented, and beautifully organized projects — all from the command line. It helps you refactor Python files, generate docstrings, and organize your files effortlessly using smart automation.
 
----
+## 🚀 Revolutionize Your Code Workflow
 
-## 🌟 Features
+Code Alchemist CLI is a powerful, intelligent command-line tool designed to automate code improvement, analysis, and transformation across multiple programming languages. Say goodbye to repetitive code cleanup and hello to pristine, optimized code!
 
-- 📂 **Single File or Directory Support** – Choose a file or entire folder for processing.
-- 🧠 **AI-Powered Code Refactoring** – Improves your code structure, formatting, and readability.
-- 🧾 **Automatic Docstring Generation** – Generates Pythonic and PEP-257-compliant docstrings.
-- 🗂️ **Intelligent File Management** – Move, rename, or backup files easily with CLI options.
-- 🧪 **Demo Mode** – Try it out in a safe, non-destructive way to preview changes.
+### 🌟 Key Features
 
----
+- 🧠 **Intelligent Code Analysis**
+  - Supports 20+ programming languages
+  - Deep structural code inspection
+  - Identifies potential improvements and anti-patterns
 
-## 🧩 Problem It Solves
+- 📝 **Automatic Documentation**
+  - Generates clean, professional docstrings
+  - Adds context-aware comments
+  - Improves code readability
 
-Manually improving code can be a tedious, error-prone process — especially when maintaining large or legacy projects. **Code Alchemist CLI** automates:
+- 🔧 **Comprehensive Refactoring**
+  - Optimize code structure
+  - Remove unused imports
+  - Clean up redundant comments
+  - Suggest performance improvements
 
-- ✅ Code cleanup and linting
-- ✅ Function and class documentation
-- ✅ Navigating and organizing chaotic file structures
+- 🌐 **Multi-Language Support**
+  Supported Languages:
+  - Python
+  - JavaScript
+  - Java
+  - C/C++
+  - Go
+  - Ruby
+  - Rust
+  - TypeScript
+  - PHP
+  - Swift
+  
+  And many more text-based file types!
 
----
+## 📦 Installation
 
-## 📽️ Demo
+### Prerequisites
+- Python 3.8+
+- pip
+- Git
 
-Here’s how easy it is to use Code Alchemist CLI:
-
-```bash
-#analyze a file
-./code_alchemist.py analyze filename/path
-
-# Refactor a file
-./code_alchemist.py refactor filename/path
-
-# Generate documentation for the file
-./code_alchemist.py document filename/path
-
-# Suggest performance and security improvements
-./code_alchemist.py optimize filename/path
-
-# Generate project dashboard
-./code_alchemist.py dashboard filename/path
-
-# Setup project structure and config files
-./code_alchemist.py setup filename/path
-
-#  Run all transformations at once
-./code_alchemist.py transmute filename/path
-````
-
-🧪 Try the `demo` flag to preview changes without writing them:
+### Quick Install
 
 ```bash
-./demo.sh
-```
+# Clone the repository
+git clone https://github.com/Anik2812/Code-Alchemist.git
 
----
+# Navigate to the project directory
+cd Code-Alchemist
 
-## 🧠 Built with Amazon Q Developer
-
-Amazon Q Developer played a key role in shaping the design and logic of this CLI tool:
-
-* 🧱 Helped break the app into reusable, testable components
-* 🪄 Generated refactoring and formatting logic with clean patterns
-* 🔁 Assisted in iterating code with real-time debugging tips
-* 📄 Generated Markdown & docstrings for better maintainability
-
-**💡 Tip:** Always iterate with Q in focused steps. Use it to optimize specific functions, generate options, or even rewrite large chunks with smarter logic.
-
----
-
-## ⚙️ Setup & Installation
-
-Clone this repository:
-
-```bash
-git clone https://github.com/Anik2812/code-alchemist-cli.git
-cd code-alchemist-cli
-```
-
-Open linux terminal or wsl
-```for wsl
- cd "/mnt/(drive name)/path to the file"
-```
-
-Install dependencies:
-
-```bash
+# Make the setup script executable
 chmod +x ./setup.sh
+
+# Run the setup script
 ./setup.sh
 ```
 
----
+## 🖥️ Usage
 
-## 🧪 Test Your Setup
+Code Alchemist CLI offers a wide range of powerful commands:
 
-To verify it works:
-
-```For demo you can run
-chmod +x ./demo.sh
-./demo.sh
-```
-
-You should see a list of supported commands and flags.
 ```bash
-  ./code_alchemist.py
+# Analyze a file's structure
+./code_alchemist.py analyze filename
+
+# Refactor and optimize code
+./code_alchemist.py refactor filename
+
+# Generate comprehensive documentation
+./code_alchemist.py document filename
+
+# Optimize for performance and security
+./code_alchemist.py optimize filename
+
+# Generate project-wide dashboard
+./code_alchemist.py dashboard filename
+
+# Run all transformations at once
+./code_alchemist.py transmute filename
 ```
----
 
-## 🗂️ Folder Structure
+## 💻 Cross-Platform Compatibility
 
+Code Alchemist CLI works seamlessly across:
+- Linux
+- macOS
+- Windows (via WSL)
+- Windows Git Bash
+
+### Windows Subsystem for Linux (WSL) Tips
+
+Access Windows files easily:
+```bash
+# Navigate to Windows drives
+cd "/mnt/c/Users/YourUsername/Documents/YourProject"
+cd "/mnt/d/Development/YourProject"
 ```
-code-alchemist-cli/
-│
-├── code_alchemist.py        # Main CLI file
-├── setup.sh
-├── demo.sh
-```
+
+## 🤖 Powered by Amazon Q Developer
+
+Built with the assistance of Amazon Q Developer, ensuring robust, intelligent code transformation.
+
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## 🌍 Connect
+
+Let's Connect: [Anik2812](https://anik2812.netlify.app/)
 
 ---
-
-## ✅ TODO & Roadmap
-
-* [x] Core CLI functionality (file, dir, refactor, docstring)
-* [x] Safe mode/demo support
-* [ ] Integrate Black/Flake8 for formatting
-* [ ] Add Web UI layer
-* [ ] GitHub Actions CI/CD integration
-
----
-
-## 🙌 Author
-
-Built by **Anik – The Code Alchemist** 🔮
-Part of **DEVChallenge 2025 - AI Access Control Track**
-Connect: [GitHub](https://github.com/Anik2812) · [LinkedIn](https://linkedin.com/in/anik2812)
